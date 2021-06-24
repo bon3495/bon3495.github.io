@@ -904,7 +904,8 @@
   width: 100%;
   padding-top: 29.16667%;
   display: block;
-  background: 50% / cover no-repeat url("./assets/img/banner/banner1");
+  background: 50% / cover no-repeat
+    url("https://cf.shopee.vn/file/d5c87f629ee9da2265f706c849a84f00");
 }
 
 .banner-top__arrow {
@@ -1244,7 +1245,7 @@
 .top-sales-item-link__img-bgc1 {
   padding-top: 100%;
   background: center / contain no-repeat
-    url("./assets/img/banner/top-sales-1.jpeg");
+    url("https://cf.shopee.vn/file/17ee2ceb412923a8a0ad26b6c20305fb");
 }
 
 .top-sales-item-link__img-bgc2 {
