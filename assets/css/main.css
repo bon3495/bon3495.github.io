@@ -904,7 +904,7 @@
   width: 100%;
   padding-top: 29.16667%;
   display: block;
-  background: 50% / cover no-repeat url("../img/banner/banner1.jpeg");
+  background: 50% / cover no-repeat url("./assets/img/banner/banner1");
 }
 
 .banner-top__arrow {
@@ -1243,7 +1243,8 @@
 
 .top-sales-item-link__img-bgc1 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sales-1.jpeg");
+  background: center / contain no-repeat
+    url("./assets/img/banner/top-sales-1.jpeg");
 }
 
 .top-sales-item-link__img-bgc2 {
