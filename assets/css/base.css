@@ -111,6 +111,13 @@ ul {
   padding: 2px 4px 0 4px;
   border: 1px solid var(--primary);
   margin-right: 4px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 16px;
 }
 
 .sale-off-tag {
@@ -118,6 +125,13 @@ ul {
   display: inline-block;
   background-color: #f69114;
   color: var(--white);
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 16px;
 }
 
 .installment-tag {
@@ -126,6 +140,13 @@ ul {
   line-height: 1.2rem;
   padding: 2px 4px 0 4px;
   border: 1px solid #f5a622;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 16px;
 }
 
 .mall-tag {
@@ -141,6 +162,12 @@ ul {
   justify-content: center;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .order-processing-tag::before,
@@ -166,7 +193,7 @@ ul {
   position: relative;
   width: 58px;
   height: 16px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6rem;
   background: var(--primary);
   color: var(--white);
