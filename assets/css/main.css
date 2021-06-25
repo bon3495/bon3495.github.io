@@ -1800,7 +1800,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .search-item-result__item-price {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--text);
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1813,7 +1813,7 @@ input[type="checkbox"]:checked + label:before {
 .search-item-result__item-price-saleoff {
   flex: 1;
   justify-content: flex-end;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--primary);
 }
 
@@ -1845,7 +1845,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .search-item-result__item-rated span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #212121;
   margin-left: 5px;
 }

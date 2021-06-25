@@ -162,12 +162,6 @@ ul {
   justify-content: center;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  word-wrap: break-word;
-  overflow: hidden;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 
 .order-processing-tag::before,
