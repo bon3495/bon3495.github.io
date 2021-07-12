@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Icon: Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font: Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Venobox  Video -->
+    <link rel="stylesheet" href="./assets/css/venobox.min.css">
+
+    <!-- Reset CSS: Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header container">
+        <div class="header__contact d-none d-sm-flex justify-content-end align-items-center">
+            <a href="#" class="header__contact-link py-3 d-flex justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone header__contact-icon" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                <p class="header__contact-text m-0 pr-3 border-right ml-2">
+                    0123 68 86 28
+                </p>
+            </a>
+            <button class="btn header__contact-btn p-3 d-flex border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search header__contact-icon" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+        </div>
+        <div class="header__nav">
+            <nav class="navbar navbar-expand-lg p-0 align-items-center">
+                <a class="navbar-brand p-0 d-flex align-items-center" href="#">
+                    <img src="./assets/img/logo.svg" alt="Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#moviesNav"
+                    aria-controls="#moviesNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list navbar__bar" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="moviesNav">
+                    <ul id="mainNav" class="navbar-nav ml-auto">
+                        <li class="nav-item line active">
+                            <a class="nav-link" href="#">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#newin">
+                                NEW IN
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#showtimes">
+                                SHOWTIMES
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#comingsoon">
+                                COMING SOON
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#contact">
+                                CONTACT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Header Fixed -->
+    <header class="headerFixed" id="headerFixed">
+        <div class="header__nav container">
+            <nav class="navbar navbar-expand-lg p-0 align-items-center">
+                <a class="navbar-brand p-0 d-flex align-items-center" href="#">
+                    <img src="./assets/img/logo.svg" alt="Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#moviesNav"
+                    aria-controls="#moviesNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list navbar__bar" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="moviesNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item line active">
+                            <a class="nav-link" href="#">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#newin">
+                                NEW IN
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#showtimes">
+                                SHOWTIMES
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#comingsoon">
+                                COMING SOON
+                            </a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#contact">
+                                CONTACT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <section class="moviesCarousel">
+        <!--  data-ride="carousel" -->
+        <div id="moviesCarouselCaptions" class="carousel slide carousel-fade">
+            <ol class="carousel-indicators container mx-auto p-0 d-none d-lg-flex">
+                <li class="active m-lg-3 m-xl-4 border-0" data-target="#moviesCarouselCaptions" data-slide-to="0">
+                </li>
+                <li class="m-lg-3 m-xl-4 border-0" data-target="#moviesCarouselCaptions" data-slide-to="1"></li>
+                <li class="m-lg-3 m-xl-4 border-0" data-target="#moviesCarouselCaptions" data-slide-to="2"></li>
+                <li class="m-lg-3 m-xl-4 border-0" data-target="#moviesCarouselCaptions" data-slide-to="3"></li>
+                <li class="m-lg-3 m-xl-4 border-0" data-target="#moviesCarouselCaptions" data-slide-to="4"></li>
+                <li class="m-lg-3 m-xl-4 border-0" data-target="#moviesCarouselCaptions" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item1 active">
+                    <div class="moviesCarousel__modal"></div>
+                    <div class="carousel-caption container d-flex align-items-end d-sm-block">
+                        <div class="carousel-caption__content">
+                            <h2 class="carousel-caption__title">
+                                End of the World: Part I
+                            </h2>
+                            <p class="carousel-caption__text">
+                                As mass of solar storms causes tsunamis, volcanoes, and flooding, a city-dwelling family
+                                attempts to flee to the relative safety of a group of high-elevation caves several miles
+                                away.
+                            </p>
+                            <p class="carousel-caption__type">
+                                Action, Adventure, Fantasy
+                            </p>
+                            <div
+                                class="carousel-caption__trailer d-none d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                                <button class="btn carousel-caption__btn d-flex align-items-center mr-0 mr-sm-5">
+                                    <span>
+                                        BOOK TICKETS
+                                    </span>
+                                </button>
+                                <button class="btn carousel-caption__btn d-flex align-items-center">
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                        PLAY TRAILER
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                    <div class="moviesCarousel__modal"></div>
+                    <div class="carousel-caption container d-flex align-items-end d-sm-block">
+                        <div class="carousel-caption__content">
+                            <h2 class="carousel-caption__title">
+                                X-Men: The Last Stand
+                            </h2>
+                            <p class="carousel-caption__text">
+                                The human government develops a cure for mutations, and Jean Gray becomes a darker
+                                uncontrollable persona called the Phoenix who allies with Magneto, causing escalation
+                                into an all-out battle for the X-Men.
+                            </p>
+                            <p class="carousel-caption__type">
+                                Action, Adventure, Fantasy
+                            </p>
+                            <div
+                                class="carousel-caption__trailer d-none d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                                <button class="btn carousel-caption__btn d-flex align-items-center mr-0 mr-sm-5">
+                                    <span>
+                                        BOOK TICKETS
+                                    </span>
+                                </button>
+                                <button class="btn carousel-caption__btn d-flex align-items-center">
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                        PLAY TRAILER
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item3">
+                    <div class="moviesCarousel__modal"></div>
+                    <div class="carousel-caption container d-flex align-items-end d-sm-block">
+                        <div class="carousel-caption__content">
+                            <h2 class="carousel-caption__title">
+                                The Expendables 2
+                            </h2>
+                            <p class="carousel-caption__text">
+                                Mr. Church reunites the Expendables for what should be an easy paycheck, but when one of
+                                their men is murdered on the job, their quest for revenge puts them deep in enemy
+                                territory and up against an unexpected threat.
+                            </p>
+                            <p class="carousel-caption__type">
+                                Action, Adventure, Fantasy
+                            </p>
+                            <div
+                                class="carousel-caption__trailer d-none d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                                <button class="btn carousel-caption__btn d-flex align-items-center mr-0 mr-sm-5">
+                                    <span>
+                                        BOOK TICKETS
+                                    </span>
+                                </button>
+                                <button class="btn carousel-caption__btn d-flex align-items-center">
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                        PLAY TRAILER
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item4">
+                    <div class="moviesCarousel__modal"></div>
+                    <div class="carousel-caption container d-flex align-items-end d-sm-block">
+                        <div class="carousel-caption__content">
+                            <h2 class="carousel-caption__title">
+                                Zack Snyder's Justice League
+                            </h2>
+                            <p class="carousel-caption__text">
+                                Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns
+                                forces with Diana Prince with plans to recruit a team of metahumans to protect the world
+                                from an approaching threat of catastrophic proportions.
+                            </p>
+                            <p class="carousel-caption__type">
+                                Action, Adventure, Fantasy
+                            </p>
+                            <div
+                                class="carousel-caption__trailer d-none d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                                <button class="btn carousel-caption__btn d-flex align-items-center mr-0 mr-sm-5">
+                                    <span>
+                                        BOOK TICKETS
+                                    </span>
+                                </button>
+                                <button class="btn carousel-caption__btn d-flex align-items-center">
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                        PLAY TRAILER
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item5">
+                    <div class="moviesCarousel__modal"></div>
+                    <div class="carousel-caption container d-flex align-items-end d-sm-block">
+                        <div class="carousel-caption__content">
+                            <h2 class="carousel-caption__title">
+                                The Avengers
+                            </h2>
+                            <p class="carousel-caption__text">
+                                Earth's mightiest heroes must come together and learn to fight as a team if they are
+                                going to stop the mischievous Loki and his alien army from enslaving humanity.
+                            </p>
+                            <p class="carousel-caption__type">
+                                Action, Adventure, Fantasy
+                            </p>
+                            <div
+                                class="carousel-caption__trailer d-none d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                                <button class="btn carousel-caption__btn d-flex align-items-center mr-0 mr-sm-5">
+                                    <span>
+                                        BOOK TICKETS
+                                    </span>
+                                </button>
+                                <button class="btn carousel-caption__btn d-flex align-items-center">
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                        PLAY TRAILER
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item6">
+                    <div class="moviesCarousel__modal"></div>
+                    <div class="carousel-caption container d-flex align-items-end d-sm-block">
+                        <div class="carousel-caption__content">
+                            <h2 class="carousel-caption__title">
+                                Fast & Furious 7
+                            </h2>
+                            <p class="carousel-caption__text">
+                                Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose
+                                brother.
+                            </p>
+                            <p class="carousel-caption__type">
+                                Action, Adventure, Fantasy
+                            </p>
+                            <div
+                                class="carousel-caption__trailer d-none d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                                <button class="btn carousel-caption__btn d-flex align-items-center mr-0 mr-sm-5">
+                                    <span>
+                                        BOOK TICKETS
+                                    </span>
+                                </button>
+                                <button class="btn carousel-caption__btn d-flex align-items-center">
+                                    <span>
+                                        <i class="fas fa-play"></i>
+                                        PLAY TRAILER
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button for Mobile < 576px -->
+    <section class="btn--sm d-block d-sm-none">
+        <div class="d-flex align-items-center">
+            <button class="btn d-flex align-items-center justify-content-center">
+                <span>
+                    BOOK TICKETS
+                </span>
+            </button>
+            <button class="btn d-flex align-items-center justify-content-center">
+                <i class="fas fa-play"></i>
+                <span>
+                    PLAY TRAILER
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <!-- New In -->
+    <section id="newin" class="newIn section">
+        <div class="container">
+            <div class="newIn__header">
+                <h3 class="newIn__header-title line active m-0">
+                    <span>New In</span>
+                </h3>
+            </div>
+            <div class="newIn__body">
+                <div class="newIn__body-list row slider">
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img1">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2019
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Avengers: Endgame
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img2">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Logan
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img3">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2003
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Pirates of the
+                                Caribbean: The Curse
+                                of the Black Pearl
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img4">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2009
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Harry Potter and the
+                                Half-Blood Prince
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img5">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2015
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Fast & Furious 7
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img6">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2016
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Deadpool
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img7">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2014
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Captain America: The Winter Soldier
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newIn__body-item col-6 col-md-4 col-lg-3">
+                        <div class="newIn__body-img newIn__body-img8">
+                            <div class="newIn__body-overlay"></div>
+                            <div class="newIn__body-click">
+                                <a href="" class="newIn__body-trailer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <a href="" class="newIn__body-link">
+                                    Read More
+                                </a>
+                                <p class="newIn__body-date">
+                                    Released: 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newIn__body-content">
+                            <p>
+                                Justice League
+                            </p>
+                            <div class="newIn__body-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Show Times -->
+    <section id="showtimes" class="showTimes section">
+        <div class="container">
+            <ul class="nav nav-tabs" id="showTimesTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="mon-tab" data-toggle="tab" href="#mon" role="tab" aria-controls="mon"
+                        aria-selected="true">
+                        <span>Mon</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="tue-tab" data-toggle="tab" href="#tue" role="tab" aria-controls="tue"
+                        aria-selected="false">
+                        <span>Tue</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="wed-tab" data-toggle="tab" href="#wed" role="tab" aria-controls="wed"
+                        aria-selected="false">
+                        <span>Wed</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="thu-tab" data-toggle="tab" href="#thu" role="tab" aria-controls="thu"
+                        aria-selected="false">
+                        <span>Thu</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="fri-tab" data-toggle="tab" href="#fri" role="tab" aria-controls="fri"
+                        aria-selected="false">
+                        <span>Fri</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="sat-tab" data-toggle="tab" href="#sat" role="tab" aria-controls="sat"
+                        aria-selected="false">
+                        <span>Sat</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line active" id="today-tab" data-toggle="tab" href="#today" role="tab"
+                        aria-controls="today" aria-selected="false">
+                        <span>Today</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="showTimesTabContent">
+
+
+                <div class="tab-pane fade" id="mon" role="tabpanel" aria-labelledby="mon-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie31.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Comedies, Late Night
+                                            Comedies
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Deadpool
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Prone to ruthless violence, ex-mercenary Wade Wilson acquires superhuman
+                                            healing powers in the wake of a failed research experiment that also leaves
+                                            him disfigured. Taking on the alter ego Deadpool, he's determined to hunt
+                                            down the man responsible.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">108 Mins</p>
+                                                <p class="showTimes__times-text-type">R</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>108 Mins</p>
+                                        <p>R</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie2.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Sci-Fi & Fantasy,
+                                            Sci-Fi
+                                            Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            The Avengers 2
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            An all-star lineup of superheroes -- including Iron Man, the Incredible Hulk
+                                            and
+                                            Captain America -- team up to save the world from certain doom. Working
+                                            under
+                                            the authority of S.H.I.E.L.D., can our heroes keep the planet at peace?
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">143 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>143 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie3.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Thrillers, Crime Action, Blockbusters
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Fast & Furious 7
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Dominic Toretto's crew of lawless and fearless street racers returns to the
+                                            United States hoping to settle down for a while. But that's not to be, as a
+                                            bitter Ian Shaw -- determined to avenge his brother's death -- comes after
+                                            Dominic.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">137 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>137 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie4.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Sci-Fi & Fantasy,
+                                            Action Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Captain America: Civil War
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            The most explosive clash to ever rock the Marvel Cinematic Universe ignites
+                                            a firestorm of conflict in the game-changing epic, Captain America: Civil
+                                            War. In the wake of collateral damage, government pressure to rein in the
+                                            Avengers drives a deep wedge between Captain America and Iron Man, causing a
+                                            catastrophic rift that turns the two friends into bitter enemies. Against a
+                                            backdrop of divided loyalties, their fellow Avengers must deal with the
+                                            fallout.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">147 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>147 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="tue-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie5.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Sci-Fi & Fantasy,
+                                            Action Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Batman v Superman: Dawn of Justice
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Superegos battle in superhero fashion while a new threat emerges in this
+                                            sequel to "Man of Steel." With Batman decamping Gotham City for Metropolis
+                                            to take on a Superman who's become too powerful, trouble brews for the rest
+                                            of humanity.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">151 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>151 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie6.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Comic Books and Superheroes
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            X-Men: Days of Future Past
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            This superhero sequel tracks Wolverine's journey back in time in an effort
+                                            to alter history and prevent the annihilation of both humans and mutants.
+                                            Conflict also develops between Professor X and Magneto about the X-Men's
+                                            relations with humans.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">131 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>131 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie7.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Thrillers, Crime Action, Heist Films
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            John Wick
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            When a retired hit man is forced back into action by a sadistic young thug,
+                                            he hunts down his adversaries with the skill and ruthlessness that made him
+                                            an underworld legend. A masterful tale of adrenaline-fueled revenge and
+                                            redemption.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">101 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>101 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie8.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Thrillers, Military & War Action, Blockbusters
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            The Expendables
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Mercenary Barney Ross leads a ragtag band of hired guns charged with
+                                            overthrowing a South American despot, a job no official military unit is
+                                            willing to touch. But once on the ground, the team learns there's more to
+                                            the mission than they were told.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">103 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>103 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie9.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Action Thrillers, Sci-Fi
+                                            Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Avengers: Age of Ultron
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Returning to action to stem another lethal threat to planet Earth, the cadre
+                                            of superheroes from the original Avengers takes on the evil and all-powerful
+                                            Ultron, who's determined to stamp out humankind.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">141 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>141 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie10.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Escape Plan: The Extractors
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            After security expert Ray Breslin is hired to rescue the kidnapped daughter
+                                            of a Hong Kong tech mogul from a formidable Latvian prison, Breslin's
+                                            girlfriend is also captured. Now he and his team must pull off a deadly
+                                            rescue mission to confront their sadistic foe and save the hostages before
+                                            time runs out.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">131 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>131 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie11.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Thrillers, Indie Action, Indie Suspense &
+                                            Thriller
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            A Score to Settle
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Diagnosed with a fatal condition, Frankie Carver is released from prison
+                                            after serving 19 years of hard time. With only a short time left to live,
+                                            Frankie must desperately try to make amends with the son he left behind
+                                            while he plots a bloody course of revenge - tracking down his old gang to
+                                            make them pay one by one.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">103 Mins</p>
+                                                <p class="showTimes__times-text-type">NR</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>103 Mins</p>
+                                        <p>NR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie12.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Espionage Action, Espionage Thrillers, Action Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Mission: Impossible - Ghost Protocol
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Super-agent Ethan Hunt dangles from skyscrapers and otherwise takes daring
+                                            to new heights on another operation from the Impossible Missions Force.
+                                            Helping Hunt get the job done is droll fellow IMF agent Luther Stickel.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">133 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>133 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="thu-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie13.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Comic Books and Superheroes,
+                                            Blockbusters
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Ant-Man
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Fresh out of prison and looking for a new start, master thief Scott Lang is
+                                            approached by Dr. Pym, creator of a technology that can shrink a man to
+                                            insect size and boost strength. Together the duo must protect the discovery
+                                            while saving the world.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">117 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>117 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie14.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Dramas Based on Real Life
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Deepwater Horizon
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Replaying the catastrophic explosion of the Deepwater Horizon oil rig in
+                                            2010, this tense drama recounts the horrific experiences of the 126 crew
+                                            members onboard and the numerous acts of courage that saved untold lives.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">107 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>107 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie15.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Foreign Action & Adventure, Japan, Japanese Language
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Rurouni Kenshin: Origins
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            With Japan's shogunate era coming to an end, once-feared assassin Kenshin
+                                            Himura becomes a masterless samurai who wanders the countryside seeking
+                                            atonement for his bloody past by defending the oppressed.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">135 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>135 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie16.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Comic Books and Superheroes,
+                                            Fantasy
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Thor: The Dark World
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            The God of Thunder strikes again as he fights to save the Nine Realms from
+                                            mysterious villain Malekith, who plans to make the entire universe go dark.
+                                            Meanwhile, Thor must find Jane Foster, who's been targeted by the evil
+                                            denizens of Svartalfheim.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">112 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>112 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="fri-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie17.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Biographies, Adventures, Action Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            In the Heart of the Sea
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Revisiting the incredible true tale of the whaling ship Essex, which was
+                                            rammed and sunk by a sperm whale in 1820, this historical drama chronicles
+                                            the crew's horrific 90-day struggle to survive amid storms, hunger and
+                                            despair.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">102 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>102 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie18.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Sci-Fi & Fantasy,
+                                            Blockbusters
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Spider-Man 2
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Burned out from leading a double life, mild-mannered Peter Parker decides to
+                                            shelve his superhero alter ego, Spider-Man. But will Peter suit up again
+                                            when multitentacled villain Doc Ock begins terrorizing New York City?
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">107 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>107 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie19.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Action Thrillers, Comic Books
+                                            and Superheroes
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Iron Man 2
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Refusing to hand over his technology to the government puts rich inventor
+                                            Tony Stark -- aka Iron Man -- up against his friend, Rhodes. But when an
+                                            arms maker partners with a rogue Russian physicist, Iron Man teams with
+                                            Rhodes to take them down.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">124 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>124 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie20.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Adventures, Super Swashbucklers, Disney
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Pirates of the Caribbean:
+                                            Dead Men Tell No Tales
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Thrust into an all-new adventure, a down-on-his luck Captain Jack Sparrow
+                                            finds the winds of ill fortune blowing even more strongly when a crew of
+                                            deadly ghost pirates led by an old rival, the terrifying Captain Salazar,
+                                            escape from the Devil's Triangle, determined to kill every pirate at
+                                            sea...including him. His only hope of survival lies in finding the legendary
+                                            Trident of Poseidon, a powerful artifact that gives its possessor total
+                                            control of the seas.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">129 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>129 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="sat-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie21.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Sci-Fi & Fantasy,
+                                            Action Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Justice League
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Fueled by his restored faith in humanity and inspired by Superman's selfless
+                                            act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to
+                                            face an even greater enemy. Together, Batman and Wonder Woman work quickly
+                                            to find and recruit a team of metahumans to stand against this newly
+                                            awakened threat. But despite the formation of this unprecedented league of
+                                            heroes—Batman, Wonder Woman, Aquaman, Cyborg and The Flash—it may already be
+                                            too late to save the planet from an assault of catastrophic proportions
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">120 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>120 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie22.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Comic Books and Superheroes
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            The Wolverine
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            Wolverine travels to modern-day Japan in this kaleidoscopic epic based on
+                                            the Marvel Comics character. Vulnerable for the first time and pushed to his
+                                            limits, Logan confronts lethal samurai steel and his inner struggle against
+                                            his own immortality.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">126 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>126 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie23.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Comic Books and Superheroes
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Black Panther
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            After the death of his father, the king of Wakanda, young T'Challa returns
+                                            home to the isolated high-tech African nation to succeed to the throne and
+                                            take his rightful place as king. But when a powerful enemy reappears,
+                                            T'Challa's mettle as king -- and Black Panther -- is tested when he's drawn
+                                            into a formidable conflict that puts the fate of Wakanda and the entire
+                                            world at risk. Faced with treachery and danger, he must release the full
+                                            power of Black Panther to defeat his foes and secure the safety of his
+                                            people and their way of life.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">134 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>134 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie24.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Fast & Furious Presents:
+                                            Hobbs & Shaw
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            For years, hulking lawman Luke Hobbs and lawless outcast Deckard Shaw have
+                                            traded smack talk and body blows. But when cyber-genetically enhanced
+                                            anarchist Brixton gains control of an insidious bio-threat that could alter
+                                            humanity forever, Hobbs and Shaw must partner up to bring down the only guy
+                                            who might be badder than themselves!
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">137 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>137 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="tab-pane fade show active" id="today" role="tabpanel" aria-labelledby="today-tab">
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie25.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Comic Books and Superheroes, Action Sci-Fi & Fantasy,
+                                            Blockbusters
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Spider-Man
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            After being chomped by a genetically altered spider, shy high schooler Peter
+                                            Parker is endowed with amazing superpowers. And while he first uses them to
+                                            win wrestling matches, he'll eventually need them to battle a villain known
+                                            as the Green Goblin.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">121 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>121 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie26.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Comic Books and Superheroes
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Logan
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            In this chapter from the exploits of Wolverine, the hirsute superhero
+                                            returns to thwart the apocalyptic plans of supervillain Nathaniel Essex. But
+                                            with Wolverine's healing abilities waning, he'll need the help of a female
+                                            clone created from his DNA.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">135 Mins</p>
+                                                <p class="showTimes__times-text-type">R</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>135 Mins</p>
+                                        <p>R</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie27.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Action Thrillers, Sci-Fi
+                                            Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Avengers: Infinity War
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            An unprecedented cinematic journey ten years in the making and spanning the
+                                            entire Marvel Cinematic Universe, Marvel Studios' Avengers: Infinity War
+                                            brings to the screen the ultimate, deadliest showdown of all time. The
+                                            Avengers and their Super Hero allies must be willing to sacrifice all in an
+                                            attempt to defeat the powerful Thanos before his blitz of devastation and
+                                            ruin puts an end to the universe.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">149 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>149 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="showTimesTabContent__item row">
+                            <div class="col-12 col-sm-4 col-lg-3 col-xl-2 showTimes__img">
+                                <img src="./assets/img/movie28.jpeg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-9 col-xl-10 showTimes__content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="showTimes__content-category m-0">
+                                            Action & Adventure, Action Sci-Fi & Fantasy, Action Thrillers, Sci-Fi
+                                            Thrillers
+                                        </p>
+                                        <h3 class="showTimes__content-title mb-1 mb-md-3">
+                                            Avengers: Endgame
+                                        </h3>
+                                        <p class="showTimes__content-text mb-2 mb-md-4">
+                                            After the events of Infinity War leaves half of the universe in ruins, the
+                                            remaining Avengers must work together to recruit old and new allies, and
+                                            muster all of their remaining strength and resources to defeat the mad titan
+                                            Thanos and bring their friends back from the brink of oblivion.
+                                        </p>
+                                        <p class="showTimes__content-fullSynopsis d-block mb-2 mb-md-4">
+                                            Full Synopsis
+                                            <i class="fas fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="showTimes__times col-12 col-lg-9 d-flex align-items-center">
+                                        <div
+                                            class="showTimes__times-text d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <i class="far fa-clock"></i>
+                                                Viewing Times
+                                            </p>
+                                            <div class="d-flex d-md-none align-items-center">
+                                                <p class="showTimes__times-text-time">181 Mins</p>
+                                                <p class="showTimes__times-text-type">PG</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn__disabled ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            11:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            16:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            18:00
+                                        </button>
+                                        <button class="btn ml-0 ml-md-3 mr-2 mr-sm-3 mr-md-0">
+                                            21:00
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="showTimes__times-time col-12 col-lg-3 d-none d-md-flex align-items-center justify-content-star justify-content-lg-end">
+                                        <p>181 Mins</p>
+                                        <p>PG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section id="comingsoon" class="comingSoon section">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-12 position-static"> -->
+            <div class="comingSoon__title">
+                <h3 class="line active m-0">
+                    <span>
+                        Coming Soon
+                    </span>
+                </h3>
+            </div>
+            <div class="comingSoon__body row">
+                <div class="comingSoon__body-bgc comingSoon__body-bgc1"></div>
+                <div class="col-12 col-sm-5 comingSoon__content">
+                    <p class="comingSoon__content-category m-0">
+                        Comedy, Crime
+                    </p>
+                    <h3 class="comingSoon__content-title m-0">
+                        The Hangover Part III
+                    </h3>
+                    <div class="comingSoon__content-icon d-flex align-items-center flex-row flex-sm-column flex-md-row">
+                        <div class="comingSoon__content-rating mr-0 mr-md-3">
+                            <i class="mr-2 fas fa-star"></i>
+                            <i class="mr-2 fas fa-star"></i>
+                            <i class="mr-2 fas fa-star"></i>
+                            <i class="mr-2 fas fa-star"></i>
+                            <i class="mr-2 fas fa-star"></i>
+                        </div>
+                        <div class="comingSoon__content-date d-flex align-items-center">
+                            <i class="mr-3 far fa-calendar-alt"></i>
+                            <p class="m-0">
+                                15 April, 2021
+                            </p>
+                        </div>
+                    </div>
+                    <p class="comingSoon__content-text">
+                        When one of their own is kidnapped by an angry gangster, the Wolf Pack must track
+                        down Mr. Chow, who has escaped from prison and is on the run.
+                    </p>
+                    <a href="" class="comingSoon__content-link">
+                        MORE INFO
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-7 comingSoon__video ml-auto">
+
+                    <!-- <a class="venobox" data-autoplay="true" data-vbtype="video" href="http://youtu.be/xxx">Youtube</a> -->
+
+                    <a href="https://youtu.be/hohYu4V1efk" class="venobox comingSoon__video-link d-block"
+                        data-autoplay="true" data-vbtype="video">
+                        <i class="fas fa-play"></i>
+                        <img src="./assets/img/slide-3-video.png" alt="" class="comingSoon__video-img img-fluid">
+                    </a>
+                </div>
+            </div>
+            <!-- </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Movies List -->
+    <section class="moviesList">
+        <div class="container">
+            <div class="moviesList__list row slick__tab">
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie33.jpeg" alt="" class="img-fluid">
+                        <h4>Cosmic Sin</h4>
+                        <p>19 October, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie34.jpeg" alt="" class="img-fluid">
+                        <h4>Locked In</h4>
+                        <p>02 May, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie35.jpeg" alt="" class="img-fluid">
+                        <h4>City of Lies</h4>
+                        <p>19 December, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie36.jpeg" alt="" class="img-fluid">
+                        <h4>Above Suspicion</h4>
+                        <p>30 October, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie37.jpeg" alt="" class="img-fluid">
+                        <h4>Night of the Sicario</h4>
+                        <p>23 Jun, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie38.jpeg" alt="" class="img-fluid">
+                        <h4>Wonder Woman 1984</h4>
+                        <p>25 November, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie39.jpeg" alt="" class="img-fluid">
+                        <h4>Midway</h4>
+                        <p>03 September, 2021</p>
+                    </a>
+                </div>
+                <div class="col-2 moviesList__list-item">
+                    <a href="" class="moviesList__list-link">
+                        <img src="./assets/img/movie40.jpeg" alt="" class="img-fluid">
+                        <h4>The Call of the Wild</h4>
+                        <p>11 August, 2021</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+        <div class="container-lg">
+            <div class="contact__title">
+                <h3 class="line active m-0">
+                    <span>
+                        Contact Us
+                    </span>
+                </h3>
+            </div>
+            <div class="row">
+                <form class="col-12 col-lg-8 contact__form">
+                    <div class="form-row contact__form-item">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row contact__form-item">
+                        <div class="col-12">
+                            <textarea class="form-control" id="contact__form-message" rows="5"
+                                placeholder="Message..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row m-0 justify-content-end">
+                        <button type="submit" class="btn contact__form-submit">Submit</button>
+                    </div>
+                </form>
+                <div
+                    class="col-12 col-lg-4 contact__socials d-flex justify-content-center justify-content-md-around align-items-center d-lg-block">
+                    <div class="contact__socials-item">
+                        <a href="" class="contact__socials-link d-flex align-items-center">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="d-none d-md-block">
+                                Facebook.com
+                            </span>
+                        </a>
+                    </div>
+                    <div class="contact__socials-item">
+                        <a href="" class="contact__socials-link d-flex align-items-center">
+                            <i class="fab fa-instagram"></i>
+                            <span class="d-none d-md-block">
+                                Instagram
+                            </span>
+                        </a>
+                    </div>
+                    <div class="contact__socials-item">
+                        <a href="" class="contact__socials-link d-flex align-items-center">
+                            <i class="fab fa-twitter"></i>
+                            <span class="d-none d-md-block">
+                                Twitter
+                            </span>
+                        </a>
+                    </div>
+                    <div class="contact__socials-item">
+                        <a href="" class="contact__socials-link d-flex align-items-center">
+                            <i class="fab fa-youtube"></i>
+                            <span class="d-none d-md-block">
+                                Youtube
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26432.434346056478!2d-118.34398767502694!3d34.09374955804472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf07045279bf%3A0xf67a9a6797bdfae4!2sHollywood%2C%20Los%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1625992981531!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact__contacts row text-center">
+                <div class="col-12 col-sm-4 contact__contacts-item">
+                    <i class="fas fa-address-card"></i>
+                    <h3>Phone Number</h3>
+                    <p>+91-123456789</p>
+                    <p>+91-4444-5555</p>
+                </div>
+                <div class="col-12 col-sm-4 contact__contacts-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>1201 West 5th Street Suite F-170 Los Angeles, Ca. 90017</p>
+                </div>
+                <div class="col-12 col-sm-4 contact__contacts-item">
+                    <i class="fas fa-mail-bulk"></i>
+                    <h3>Email</h3>
+                    <p>bon3495@gmail.com</p>
+                    <p>tranlebaoloc_2006@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-xl">
+            <div class="footer__list row">
+                <div class="col-6 col-lg-3 footer__item mb-4 mb-lg-0">
+                    <h3>Language Movies</h3>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        English movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Korean movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        France movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Japan movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Vietnam movies
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 footer__item mb-4 mb-lg-0">
+                    <h3>Film Genres</h3>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Action movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Fantasy movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Drama movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Romance movies
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        Comedy movies
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 footer__item">
+                    <h3>Booking Online</h3>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        https://www.cgv.vn/
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        https://www.galaxycine.vn/
+                    </a>
+                    <a href="">
+                        <!-- <i class="fas fa-circle"></i> -->
+                        https://moveek.com/
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 footer__item">
+                    <h3>App Available On</h3>
+                    <p class="footer__item-text">
+                        Download App and Get Free Movie Ticket !
+                    </p>
+                    <div class="footer__item-apps d-flex align-items-center justify-content-between">
+                        <a href="">
+                            <img src="./assets/img/ggapp.jpeg" alt="Google App" class="footer__item-img">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/iosapp.jpeg" alt="IOS App" class="footer__item-img">
+                        </a>
+                    </div>
+                    <p class="footer__item-payback">
+                        <span>$50</span> Payback on App Download
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__end">
+            <div class="container">
+                <p class="m-0">
+                    &copy; Copyright 2021 <span>Movie Star</span> . All rights reserved - Design by <span>Bon</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top -->
+    <a href="#" class="back-to-top cd-top text-replace js-cd-top d-none d-lg-block">
+        <i class="back-to-top__icon fa fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- JQUERY JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            speed: 800,
+            dots: false,
+            centerMode: false,
+            autoplay: false,
+            nextArrow: '<i class="arrow-icon-right fa fa-angle-right" aria-hidden="true"></i>',
+            prevArrow: '<i class="arrow-icon-left fa fa-angle-left" aria-hidden="true"></i>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }]
+        });
+
+
+        // $('.slick').on('beforeChange', function (event, slick, slide, nextSlide) {
+        //     $('.slider-nav-thumbnails').find('.slick-slide').removeClass('slick-current').eq(nextSlide).addClass('slick-current');
+        // });
+
+
+        $('.slick__tab').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            speed: 800,
+            autoplay: true,
+            nextArrow: '<i class="arrow-icon-right fa fa-angle-right" aria-hidden="true"></i>',
+            prevArrow: '<i class="arrow-icon-left fa fa-angle-left" aria-hidden="true"></i>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }]
+        });
+
+
+    </script>
+
+    <!-- Venobox JS -->
+    <script src="./assets/js/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
+
+    <!-- BACK TO TOP -->
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/main-backToTop.js"></script>
+
+    <script>
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("headerFixed").style.transform = "translateY(0)";
+                document.getElementById("headerFixed").style.opacity = "1";
+            } else {
+                document.getElementById("headerFixed").style.transform = "translateY(-100%)";
+                document.getElementById("headerFixed").style.opacity = "0";
+            }
+        }
+
+
+        // var mainNav = document.getElementById('mainNav');
+        // var listNav = document.getElementsByClassName('nav-item');
+        // for (var i = 0; i < listNav.length; i++) {
+        //     listNav[i].addEventListener("click", function () {
+        //         var currentActive = document.querySelector('#mainNav .line.active');
+
+        //         // currentActive.classList.remove("line");
+        //         currentActive.classList.remove("active");
+
+        //         // this.classList.add("line");
+        //         this.classList.add("active");
+        //     });
+        // }
+    </script>
+</body>
+
+</html>

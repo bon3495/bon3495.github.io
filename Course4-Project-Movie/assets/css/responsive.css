@@ -1,0 +1,370 @@
+@media screen and (max-width: 1199.98px) {
+  #moviesCarouselCaptions .carousel-indicators {
+    margin-bottom: 10px;
+  }
+
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+  }
+
+  .carousel-caption__content {
+    width: 85%;
+  }
+
+  .carousel-caption__title {
+    font-size: 4vw;
+  }
+
+  .carousel-caption__text {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+  /* Arrows */
+  .newIn__body-list .arrow-icon-left,
+  .newIn__body-list .arrow-icon-left:hover {
+    left: 0;
+  }
+
+  .newIn__body-list .arrow-icon-right,
+  .newIn__body-list .arrow-icon-right :hover {
+    right: 0;
+  }
+
+  .moviesList__list .arrow-icon-left,
+  .moviesList__list .arrow-icon-left:hover {
+    left: -1.2vw;
+  }
+
+  .moviesList__list .arrow-icon-right,
+  .moviesList__list .arrow-icon-right:hover {
+    right: -1.2vw;
+  }
+
+  .contact__socials-item {
+    margin-left: 5vw;
+  }
+
+  .footer__item-apps {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .footer__item-apps > a + a {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .carousel-caption__trailer {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #mainNav {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+  }
+
+  .carousel-caption__text {
+    font-size: 1.4rem;
+  }
+
+  #showTimesTab .nav-link span {
+    padding: 15px 26px;
+  }
+
+  .showTimes__content-text {
+    -webkit-line-clamp: 3;
+  }
+
+  .showTimes__times {
+    margin-bottom: 30px;
+  }
+
+  .comingSoon__content-title {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .comingSoon__content-text {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+
+  .contact__socials-item {
+    margin-left: 0;
+  }
+
+  .footer__item h3 {
+    margin-bottom: 12px;
+  }
+
+  .footer__item {
+    text-align: center;
+  }
+
+  .footer__item-apps {
+    flex-direction: row;
+    justify-content: space-evenly !important;
+  }
+
+  .footer__item-apps > a + a {
+    margin-top: 0;
+  }
+
+  .footer__item > a {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .section {
+    padding: 30px 0;
+  }
+
+  .header__nav .navbar-brand {
+    height: 50px;
+    width: 180px;
+  }
+
+  .navbar__bar {
+    width: 42px;
+    height: 42px;
+  }
+
+  .carousel-caption__content {
+    width: 100%;
+  }
+
+  .carousel-caption__text {
+    height: auto;
+    -webkit-line-clamp: 2;
+  }
+
+  .carousel-caption__type {
+    font-size: 1.2rem;
+    margin: 0 0 12px;
+  }
+
+  .line:hover::after,
+  .line.active::after {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #showTimesTab .nav-link {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+
+  #showTimesTab .nav-link span {
+    padding: 15px 20px;
+  }
+
+  .showTimes__content-text {
+    -webkit-line-clamp: 2;
+  }
+
+  .showTimes__times {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .showTimes__times-text {
+    margin: 8px 0;
+    width: 100%;
+  }
+
+  .comingSoon__content-text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 0;
+  }
+
+  .comingSoon__content-link {
+    line-height: 2.4rem;
+  }
+  .comingSoon__content-date {
+    margin: 4px 0;
+  }
+
+  .contact__socials {
+    margin-top: 24px;
+  }
+
+  .contact__socials-link {
+    padding: 0 20px;
+  }
+
+  .contact__socials-link i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 0;
+    font-size: 2.4rem;
+  }
+
+  .contact__contacts-item i {
+    font-size: 4rem;
+    margin-bottom: 12px;
+  }
+
+  .contact__contacts-item h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .contact__contacts-item p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .contact__map {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .header__nav .navbar {
+    margin-top: 8px;
+  }
+
+  .navbar-brand img {
+    padding-left: 7.5px;
+  }
+
+  #moviesCarouselCaptions .carousel-item {
+    padding-top: 50%;
+  }
+
+  .carousel-caption__trailer .carousel-caption__btn {
+    width: 50%;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-caption__trailer .carousel-caption__btn span {
+    padding: 12px 0;
+    border-radius: 0;
+    color: var(--white);
+    letter-spacing: normal;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  #moviesCarouselCaptions .carousel-caption {
+    padding: 0;
+    height: 100%;
+  }
+
+  .carousel-caption__content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 12px;
+  }
+
+  .carousel-caption__title {
+    font-size: 6vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .carousel-caption__text {
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption__type {
+    font-size: 1.2rem;
+    margin: 6px 0 20px;
+    line-height: 1.4rem;
+  }
+
+  #moviesNav .navbar-nav {
+    border: none;
+  }
+
+  .showTimes__times .btn {
+    padding: 12px 8px;
+  }
+
+  .comingSoon__content-icon {
+    justify-content: space-between;
+  }
+
+  .contact__form .form-row {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+
+  .contact__form .form-row > .col,
+  .form-row > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .contact__form-item {
+    margin-bottom: 10px;
+  }
+
+  .contact__socials-item + .contact__socials-item {
+    margin-left: 12px;
+  }
+
+  .contact__socials-link {
+    padding: 0;
+  }
+
+  .contact__contacts-item + .contact__contacts-item {
+    margin-top: 20px;
+  }
+  .footer__item h3 {
+    font-size: 1.6rem;
+  }
+
+  .footer__item > a,
+  .footer__item-text,
+  .footer__item-payback {
+    font-size: 1.2rem;
+  }
+
+  .footer__item-apps {
+    flex-direction: column;
+  }
+
+  .footer__item-apps > a + a {
+    margin-top: 16px;
+  }
+
+  .footer__item-payback {
+    padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .header__nav .navbar-brand {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}

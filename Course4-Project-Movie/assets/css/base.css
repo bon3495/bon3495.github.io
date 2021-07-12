@@ -1,0 +1,34 @@
+:root {
+  --primary: #ec7532;
+  --secondary: #fbbd61;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  box-sizing: inherit;
+  transition: all linear 0.4s;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@keyframes fadeUpDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.section {
+  padding: 75px 0;
+}
