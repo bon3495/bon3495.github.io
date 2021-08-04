@@ -1,0 +1,65 @@
+.hero {
+    margin-top: $height-mobile;
+    position: relative;
+    background-color: $veryLightGray;
+    @include breakpoint-up(large) {
+        margin-top: $height-normal;
+        display: flex;
+        height: 656px;
+        .container {
+            display: flex;
+            align-items: center;
+            .hero__bg {
+                order: 2;
+            }
+
+            .hero__text-container {
+                order: 1;
+            }
+        }
+    }
+    &__bg {
+        position: relative;
+        padding-top: 75%;
+        width: 100%;
+        background: url("../images/bg-intro-mobile.svg") no-repeat left center/cover;
+        @include breakpoint-up(medium2) {
+            padding-top: 60%;
+        }
+        @include breakpoint-up(large) {
+            background: url("../images/bg-intro-desktop.svg") no-repeat center center/cover;
+            right: -15%;
+            height: 100%;
+            padding-top: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: url("../images/image-mockups.png") no-repeat center bottom;
+            top: 0;
+            left: 50%;
+            background-size: 86%;
+            transform: translateX(-50%);
+            @include breakpoint-up(medium2) {
+                background-size: 75%;
+            }
+            @include breakpoint-up(large) {
+                height: 110%;
+                background-size: 80%;
+            }
+        }
+    }
+
+    &__text-container {
+        text-align: center;
+        width: 100%;
+        @include breakpoint-up(large) {
+            width: 45%;
+            padding: 0 0 0 1.5rem;
+            text-align: left;
+        }
+    }
+}

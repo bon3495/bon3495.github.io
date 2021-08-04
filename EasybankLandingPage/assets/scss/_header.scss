@@ -1,0 +1,88 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: $white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+    &.open {
+        .header__toggle {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+
+        .header__menu {
+            animation: fade-in ease-in-out 300ms forwards;
+        }
+    }
+
+    &__nav {
+        padding: 0 1.5rem;
+    }
+    &__logo {
+        &-img {
+            width: 8.875rem;
+            height: 1.375rem;
+        }
+    }
+
+    &__toggle {
+        // Mobile menu
+        border: 0;
+        background-color: transparent;
+        @include breakpoint-down(medium) {
+            padding: 1.5rem 0;
+        }
+        span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $darkBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__links {
+        a {
+            display: inline-block;
+            padding: 1.9375rem 0;
+            position: relative;
+            color: $GrayishBlue;
+            font-size: $font-sm;
+            transition: all 300ms ease-in-out;
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0%;
+                bottom: 0;
+                left: 0;
+                height: 5px;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                transition: all 300ms ease-in-out;
+            }
+            &:hover {
+                color: $darkBlue;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
