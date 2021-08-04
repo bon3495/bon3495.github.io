@@ -1,0 +1,73 @@
+$header-height: 3rem;
+$header-height-medium: 4.5rem;
+
+// ===================== Colors =====================
+$first-color: #069c54;
+$first-color-alt: #048654;
+$title-color: #393939;
+$text-color: #707070;
+$text-color-light: #a6a6a6;
+$body-color: #fbfefd;
+$container-color: #fff;
+
+:root {
+    --title-color: #393939;
+    --text-color: #707070;
+    --body-color: #fbfefd;
+    --container-color: #fff;
+}
+
+// ===================== Font and typography =====================
+$body-font: "Poppins", sans-serif;
+$biggest-fz: 2.25rem;
+$h1-fz: 1.5rem;
+$h2-fz: 1.25rem;
+$h3-fz: 1rem;
+$normal-fz: 0.938rem;
+$small-fz: 0.813rem;
+$smaller-fz: 0.75rem;
+
+$biggest-fz-2: 4rem;
+$h1-fz-2: 2.25rem;
+$h2-fz-2: 1.5rem;
+$h3-fz-2: 1.25rem;
+$normal-fz-2: 1rem;
+$small-fz-2: 0.875rem;
+$smaller-fz-2: 0.813rem;
+$normal-fz-3: 1.4rem;
+$small-fz-3: 1rem;
+
+// ===================== Font weight =====================
+$fw-medium: 500;
+$fw-semi-bold: 600;
+
+// ===================== Margin - Padding =====================
+$mp-1: 0.5rem;
+$mp-1-5: 0.75rem;
+$mp-2: 1rem;
+$mp-3: 1.5rem;
+$mp-4: 2rem;
+$mp-5: 2.5rem;
+$mp-6: 3rem;
+$mp-7: 3.5rem;
+$mp-8: 4rem;
+
+// ===================== z-index =====================
+$z-tooltip: 10;
+$z-fixed: 100;
+// ===================== breakpoints =====================
+//  >= small: 576px - medium: 768px - large: 960px - xlarge: 1200px
+$breakpoints-min: (
+    "xlarge": 75em,
+    "large": 60em,
+    "medium": 48em,
+    "small": 36em,
+);
+
+//  <= small: 575px - medium: 767px - large: 959px - xlarge: 1199px
+$breakpoints-max: (
+    "xlarge": 74.9375em,
+    "large": 59.9375em,
+    "medium": 47.9375em,
+    "small": 35.9375em,
+);

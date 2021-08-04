@@ -1,0 +1,96 @@
+.footer {
+    &__container {
+        row-gap: $mp-4;
+        text-align: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    &__content {
+        &-logo {
+            display: block;
+            color: $first-color;
+            font-size: 1.8rem;
+            font-weight: $fw-semi-bold;
+            font-family: "Dancing Script", cursive;
+        }
+        &-sub {
+            display: block;
+            margin: 0.25rem 0 $mp-3;
+            font-size: $small-fz;
+        }
+        .footer__socials {
+            @extend %flex-ai-c;
+            &-link {
+                transition: 0.3s;
+                color: var(--title-color);
+                // color: $title-color;
+                @extend %flex-ai-c;
+                font-size: 1.5rem;
+                &:not(:last-child) {
+                    margin-right: $mp-2;
+                }
+                &:hover {
+                    color: $first-color;
+                }
+            }
+        }
+
+        &-title {
+            color: var(--title-color);
+            // color: $title-color;
+            margin-bottom: $mp-2;
+            font-size: $h2-fz;
+        }
+
+        .footer__item {
+            &-link,
+            &-text {
+                transition: 0.3s;
+                display: block;
+                color: var(--text-color);
+                // color: $text-color;
+                margin-bottom: $mp-1;
+            }
+            &-link:hover {
+                color: $first-color;
+            }
+        }
+    }
+
+    &__copy {
+        text-align: center;
+        margin-top: $mp-7;
+        font-size: $small-fz;
+        color: $text-color-light;
+    }
+    @include responsive-min(medium) {
+        &__container {
+            text-align: initial;
+        }
+        &__content {
+            &-logo {
+                font-size: $h1-fz-2;
+            }
+
+            &-sub {
+                font-size: $small-fz-2;
+            }
+
+            &-title {
+                font-size: $h2-fz-2;
+            }
+            &:first-child {
+                text-align: center;
+                width: 100%;
+                .footer__socials {
+                    justify-content: center;
+                }
+            }
+        }
+
+        &__copy {
+            font-size: $small-fz-2;
+        }
+    }
+}

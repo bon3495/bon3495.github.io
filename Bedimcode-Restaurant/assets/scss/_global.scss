@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: $header-height 0 0 0;
+    font-size: $normal-fz;
+    font-family: $body-font;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    @include responsive-min(medium) {
+        font-size: $normal-fz-2;
+    }
+}
+
+body.dark-theme {
+    --title-color: #f1f3f2;
+    --text-color: #c7d1cc;
+    --body-color: #1d2521;
+    --container-color: #27302c;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

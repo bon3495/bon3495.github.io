@@ -1,0 +1,19 @@
+.contact {
+    &__container {
+        text-align: center;
+        @include responsive-min(small) {
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+        }
+    }
+
+    &__description {
+        margin-bottom: $mp-3;
+    }
+    @include responsive-min(large) {
+        &.section {
+            padding-top: 9rem;
+            padding-bottom: 8rem;
+        }
+    }
+}

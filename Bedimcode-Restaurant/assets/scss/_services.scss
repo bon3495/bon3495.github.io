@@ -1,0 +1,32 @@
+.services {
+    &__container {
+        row-gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    &__content {
+        text-align: center;
+    }
+
+    &__img {
+        width: 64px;
+        height: 64px;
+        fill: $first-color;
+        margin-bottom: $mp-2;
+    }
+    &__title {
+        @include text-content($h3-fz, var(--title-color), $mp-1);
+    }
+
+    &__description {
+        padding: 0 $mp-3;
+    }
+
+    @include responsive-min(medium) {
+        &__container {
+            margin-top: $mp-6;
+        }
+        &__title {
+            font-size: $h3-fz-2;
+        }
+    }
+}

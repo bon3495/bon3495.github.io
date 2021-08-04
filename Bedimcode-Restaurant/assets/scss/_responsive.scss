@@ -1,0 +1,31 @@
+@include responsive-min(small) {
+    .about__data,
+    .app__data,
+    .contact__content,
+    *[class*="__initial"] {
+        text-align: initial;
+    }
+}
+
+@include responsive-min(medium) {
+    body {
+        margin: 0;
+    }
+    .section {
+        padding-top: 10rem;
+    }
+
+    .bd-container {
+        margin: 0 auto;
+    }
+}
+
+@include responsive-min(large) {
+    .about__container,
+    .app__container {
+        column-gap: 7rem;
+    }
+    .menu__container {
+        column-gap: 4rem;
+    }
+}

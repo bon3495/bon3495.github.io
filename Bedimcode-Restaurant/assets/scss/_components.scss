@@ -1,0 +1,65 @@
+// ======== CLASS CSS ========
+.section {
+    padding: 4rem 0rem 2rem;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-size: $h1-fz;
+    // color: $title-color;
+    color: var(--title-color);
+    margin-bottom: $mp-3;
+    @include responsive-min(medium) {
+        font-size: $h1-fz-2;
+    }
+}
+
+.section-subtitle {
+    font-weight: $fw-medium;
+    margin-bottom: $mp-1;
+    color: $first-color;
+    display: block;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+}
+
+// ======== ANIMATIONS ========
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// ======== LAYOUT ========
+.bd-container {
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: $mp-2;
+    margin-right: $mp-2;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+// ======== BUTTON ========
+.button {
+    display: inline-block;
+    background-color: $first-color;
+    // color: $container-color;
+    color: var(--container-color);
+    padding: $mp-1-5 $mp-2;
+    border-radius: $mp-1;
+    transition: 0.3s;
+    &:hover {
+        background-color: $first-color-alt;
+    }
+}

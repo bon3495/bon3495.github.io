@@ -1,0 +1,44 @@
+.app {
+    &__container {
+        @include responsive-min(small) {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            .app__img {
+                order: -1;
+                width: 380px;
+            }
+            .app__stores {
+                justify-content: flex-start;
+                .app__link {
+                    margin: 0;
+                    &:first-child {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    &__data {
+        text-align: center;
+    }
+    &__description {
+        margin-bottom: $mp-5;
+    }
+    &__stores {
+        @extend %flex-ai-c;
+        margin-bottom: $mp-4;
+        justify-content: center;
+        .app__link {
+            display: flex;
+            margin: 0 $mp-1;
+            &-img {
+                width: 120px;
+            }
+        }
+    }
+
+    &__img {
+        width: 230px;
+        justify-self: center;
+    }
+}

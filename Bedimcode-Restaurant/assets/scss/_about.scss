@@ -1,0 +1,23 @@
+.about {
+    &__container {
+        @include responsive-min(small) {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            .about__img {
+                width: 380px;
+                order: -1;
+            }
+        }
+    }
+    &__data {
+        text-align: center;
+        .about__description {
+            margin-bottom: $mp-3;
+        }
+    }
+    &__img {
+        width: 280px;
+        border-radius: $mp-1;
+        justify-self: center;
+    }
+}
