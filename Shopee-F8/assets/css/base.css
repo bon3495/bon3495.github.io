@@ -16,8 +16,10 @@
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
 }
 
 a {
@@ -167,7 +169,7 @@ ul {
 .order-processing-tag::before,
 .favourite-tag:before,
 .mall-tag::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   border: 2px solid;
@@ -234,4 +236,10 @@ ul {
 
 .color-primary {
   color: var(--primary) !important;
+}
+
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
 }

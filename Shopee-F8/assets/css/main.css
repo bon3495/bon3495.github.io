@@ -95,7 +95,7 @@
 .navbarItem__user-list:after {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   border-width: 10px 20px;
   border-style: solid;
   border-color: transparent transparent var(--white) transparent;
@@ -107,7 +107,7 @@
 .navbarItem__user-list::before {
   display: block;
   position: absolute;
-  content: "";
+  content: '';
   width: 76px;
   height: 30px;
   top: -17px;
@@ -150,7 +150,7 @@
 }
 
 .navbarItem__QR::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100px;
@@ -198,7 +198,7 @@
 }
 
 .navbar__item-notify::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   border-width: 0.8rem 2rem;
@@ -210,7 +210,7 @@
 }
 
 .navbar__item-notify::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 8.6rem;
@@ -650,7 +650,7 @@
 
 .searchbar-selector__list::after {
   position: absolute;
-  content: "";
+  content: '';
   display: block;
   width: 150px;
   height: 20px;
@@ -821,7 +821,7 @@
 .header-with-search__cart::after {
   display: block;
   position: absolute;
-  content: "";
+  content: '';
   border-width: 10px 20px;
   border-color: transparent transparent var(--white) transparent;
   border-style: solid;
@@ -904,7 +904,7 @@
   width: 100%;
   padding-top: 29.16667%;
   display: block;
-  background: 50% / cover no-repeat url("../img/banner/banner1.jpeg");
+  background: 50% / cover no-repeat url('../img/banner/banner1.jpeg');
 }
 
 .banner-top__arrow {
@@ -1018,95 +1018,95 @@
 }
 
 .ofs-carousel__img1 {
-  background: center / contain no-repeat url("../img/banner/m-banner1.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner1.jpeg');
 }
 
 .ofs-carousel__img2 {
-  background: center / contain no-repeat url("../img/banner/m-banner2.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner2.jpeg');
 }
 
 .ofs-carousel__img3 {
-  background: center / contain no-repeat url("../img/banner/m-banner3.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner3.jpeg');
 }
 
 .ofs-carousel__img4 {
-  background: center / contain no-repeat url("../img/banner/m-banner4.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner4.jpeg');
 }
 
 .ofs-carousel__img5 {
-  background: center / contain no-repeat url("../img/banner/m-banner1.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner1.jpeg');
 }
 
 .ofs-carousel__img6 {
-  background: center / contain no-repeat url("../img/banner/m-banner6.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner6.jpeg');
 }
 
 .ofs-carousel__img7 {
-  background: center / contain no-repeat url("../img/banner/m-banner7.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner7.jpeg');
 }
 
 .ofs-carousel__img8 {
-  background: center / contain no-repeat url("../img/banner/m-banner8.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner8.jpeg');
 }
 
 .ofs-carousel__img9 {
-  background: center / contain no-repeat url("../img/banner/m-banner3.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner3.jpeg');
 }
 
 .ofs-carousel__img10 {
-  background: center / contain no-repeat url("../img/banner/m-banner10.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner10.jpeg');
 }
 
 .ofs-carousel__img11 {
-  background: center / contain no-repeat url("../img/banner/m-banner11.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner11.jpeg');
 }
 
 .ofs-carousel__img12 {
-  background: center / contain no-repeat url("../img/banner/m-banner12.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner12.jpeg');
 }
 
 .ofs-carousel__img13 {
-  background: center / contain no-repeat url("../img/banner/m-banner13.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner13.jpeg');
 }
 
 .ofs-carousel__img14 {
-  background: center / contain no-repeat url("../img/banner/m-banner14.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner14.jpeg');
 }
 
 .ofs-carousel__img15 {
-  background: center / contain no-repeat url("../img/banner/m-banner15.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner15.jpeg');
 }
 
 .ofs-carousel__img16 {
-  background: center / contain no-repeat url("../img/banner/m-banner16.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner16.jpeg');
 }
 
 .ofs-carousel__img17 {
-  background: center / contain no-repeat url("../img/banner/m-banner17.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner17.jpeg');
 }
 
 .ofs-carousel__img18 {
-  background: center / contain no-repeat url("../img/banner/m-banner18.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner18.jpeg');
 }
 
 .ofs-carousel__img19 {
-  background: center / contain no-repeat url("../img/banner/m-banner19.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner19.jpeg');
 }
 
 .ofs-carousel__img20 {
-  background: center / contain no-repeat url("../img/banner/m-banner20.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner20.jpeg');
 }
 
 .ofs-carousel__img21 {
-  background: center / contain no-repeat url("../img/banner/m-banner21.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner21.jpeg');
 }
 
 .ofs-carousel__img22 {
-  background: center / contain no-repeat url("../img/banner/m-banner22.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner22.jpeg');
 }
 
 .ofs-carousel__img23 {
-  background: center / contain no-repeat url("../img/banner/m-banner23.jpeg");
+  background: center / contain no-repeat url('../img/banner/m-banner23.jpeg');
 }
 
 .ofs-carousel__nav {
@@ -1220,42 +1220,42 @@
 
 .top-sales-item-link__img-bgc1 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale1.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale1.jpeg');
 }
 
 .top-sales-item-link__img-bgc2 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale2.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale2.jpeg');
 }
 
 .top-sales-item-link__img-bgc3 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale3.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale3.jpeg');
 }
 
 .top-sales-item-link__img-bgc4 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale4.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale4.jpeg');
 }
 
 .top-sales-item-link__img-bgc5 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale5.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale5.jpeg');
 }
 
 .top-sales-item-link__img-bgc6 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale6.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale6.jpeg');
 }
 
 .top-sales-item-link__img-bgc7 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale7.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale7.jpeg');
 }
 
 .top-sales-item-link__img-bgc8 {
   padding-top: 100%;
-  background: center / contain no-repeat url("../img/banner/top-sale8.jpeg");
+  background: center / contain no-repeat url('../img/banner/top-sale8.jpeg');
 }
 
 .top-sales-item-link__text,
@@ -1301,22 +1301,22 @@
 
 .img-carousel__items-item-img1 {
   padding-top: 66.66667%;
-  background: center / contain no-repeat url("../img/banner/laptop-1.jpeg");
+  background: center / contain no-repeat url('../img/banner/laptop-1.jpeg');
 }
 
 .img-carousel__items-item-img2 {
   padding-top: 66.66667%;
-  background: center / contain no-repeat url("../img/banner/laptop-2.jpeg");
+  background: center / contain no-repeat url('../img/banner/laptop-2.jpeg');
 }
 
 .img-carousel__items-item-img3 {
   padding-top: 66.66667%;
-  background: center / contain no-repeat url("../img/banner/laptop-3.jpeg");
+  background: center / contain no-repeat url('../img/banner/laptop-3.jpeg');
 }
 
 .img-carousel__items-item-img4 {
   padding-top: 66.66667%;
-  background: center / contain no-repeat url("../img/banner/laptop-4.jpeg");
+  background: center / contain no-repeat url('../img/banner/laptop-4.jpeg');
 }
 
 .shop-category-on-mb-tb-item-link {
@@ -1444,7 +1444,7 @@
   color: var(--text);
 }
 
-input[type="checkbox"] + label {
+input[type='checkbox'] + label {
   padding: 8px 0;
   cursor: pointer;
   font-size: 1.4rem;
@@ -1454,12 +1454,12 @@ input[type="checkbox"] + label {
   color: #383838;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
-input[type="checkbox"] + label:before {
-  content: "\2713";
+input[type='checkbox'] + label:before {
+  content: '\2713';
   border: 1px solid #ccc;
   border-radius: 1px;
   display: inline-block;
@@ -1472,11 +1472,11 @@ input[type="checkbox"] + label:before {
   background-color: var(--white);
 }
 
-input[type="checkbox"] + label:active:before {
+input[type='checkbox'] + label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type='checkbox']:checked + label:before {
   background-color: var(--white);
   color: var(--primary);
 }
@@ -1705,7 +1705,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .search-item-result__item-discount-text:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   border-width: 6px 18px;
@@ -1982,7 +1982,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .footer-logo-background {
-  background: url("../img/shipping-unit/bg-icon.png");
+  background: url('../img/shipping-unit/bg-icon.png');
   /* margin: 0 8px 8px 0; */
 }
 
