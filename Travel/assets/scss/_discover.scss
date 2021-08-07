@@ -1,0 +1,42 @@
+.discover {
+    &__card {
+        position: relative;
+        width: 200px;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: $rem-15;
+        left: $rem-1;
+    }
+    @include responsive-min(small) {
+        &__container {
+            width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: $rem-2;
+        }
+        &__card {
+            width: 220px;
+        }
+    }
+
+    @include responsive-min(medium) {
+        &__container {
+            width: 700px;
+        }
+        &__card {
+            width: 260px;
+        }
+    }
+
+    @include responsive-min(large) {
+        &__container {
+            width: 910px;
+            padding-top: 2rem;
+        }
+        &__card {
+            width: 300px;
+        }
+    }
+}

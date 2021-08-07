@@ -1,0 +1,30 @@
+.video {
+    &__container {
+        padding-bottom: $rem-15;
+    }
+    &__data {
+        text-align: center;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        video {
+            border-radius: $rem-025;
+        }
+        &-btn {
+            position: absolute;
+            bottom: calc(-1 * #{$rem-15});
+            right: $rem-15;
+            font-size: $rem-175;
+            padding: $rem-1;
+            border-radius: 50%;
+        }
+    }
+    @include responsive-min(medium) {
+        &__container {
+            justify-content: center;
+            grid-template-columns: 0.8fr;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.subscribe {
+    &__container {
+        padding: $rem-25 0;
+        background-color: var(--first-color);
+        text-align: center;
+        color: var(--white-color);
+    }
+
+    &__title {
+        color: var(--white-color);
+    }
+
+    &__form {
+        background-color: var(--white-color);
+        padding: $rem-05;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: $rem-025;
+    }
+
+    &__input {
+        border-radius: $rem-025;
+        color: var(--text-color);
+        background-color: var(--white-color);
+        width: 70%;
+        flex: 1;
+        align-self: stretch;
+        padding-right: $rem-05;
+        &::placeholder {
+            color: var(--text-color);
+        }
+    }
+
+    @include responsive-min(small) {
+        &__form {
+            width: 500px;
+            margin: auto;
+        }
+    }
+}

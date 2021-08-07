@@ -1,0 +1,93 @@
+$header-height-mb: 3rem;
+$header-height-tb: 4.5rem;
+@function height($header-height) {
+    @return calc(100vh - #{$header-height});
+}
+
+@function negative($rem) {
+    @return calc(-1 * #{$rem});
+}
+
+// COLORS
+// Green dark 190 - Green 171 - Green blue 200
+:root {
+    --hue-color: 190;
+    --first-color: hsl(var(--hue-color), 64%, 22%);
+    --first-color-second: hsl(var(--hue-color), 64%, 22%);
+    --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+    --title-color: hsl(var(--hue-color), 64%, 18%);
+    --text-color: hsl(var(--hue-color), 24%, 35%);
+    --text-color-light: hsl(var(--hue-color), 8%, 60%);
+    --input-color: hsl(var(--hue-color), 24%, 97%);
+    --body-color: hsl(var(--hue-color), 100%, 99%);
+    --white-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+    --biggest-fz: 2.5rem;
+    --h1-fz: 1.5rem;
+    --h2-fz: 1.25rem;
+    --h3-fz: 1rem;
+    --normal-fz: 0.938rem;
+    --small-fz: 0.813rem;
+    --smaller-fz: 0.75rem;
+    --count-number: 2rem;
+}
+
+// FONT AND TYPOGRAPHY
+$body-font: "Open Sans", sans-serif;
+$title-font: "Raleway", sans-serif;
+
+// FONT WEIGHT
+$fw-medium: 500;
+$fw-semi-bold: 600;
+
+// REM
+$rem-025: 0.25rem;
+$rem-05: 0.5rem;
+$rem-075: 0.75rem;
+$rem-1: 1rem;
+$rem-125: 1.25rem;
+$rem-15: 1.5rem;
+$rem-175: 1.75rem;
+$rem-2: 2rem;
+$rem-225: 2.25rem;
+$rem-25: 2.5rem;
+$rem-275: 2.75rem;
+$rem-3: 3rem;
+$rem-35: 3.5rem;
+$rem-4: 4rem;
+$rem-45: 4.5rem;
+$rem-5: 5rem;
+$rem-55: 5.5rem;
+$rem-6: 6rem;
+$rem-7: 7rem;
+$rem-8: 8rem;
+$rem-9: 9rem;
+$rem-10: 10rem;
+
+// Z-INDEX
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// HOVER OVERLAY
+$transition: 0.4s;
+$hidden: hidden;
+$scale: scale(1.1);
+
+// ===================== breakpoints =====================
+//  >= small: 576px - medium: 768px - large: 1024px - xlarge: 1200px
+$breakpoints-min: (
+    "xlarge": 75em,
+    "large": 64em,
+    "medium": 48em,
+    "small": 36em,
+);
+
+//  <= small: 575px - medium: 767px - large: 1023px - xlarge: 1199px
+$breakpoints-max: (
+    "xlarge": 74.9375em,
+    "large": 63.9375em,
+    "medium": 47.9375em,
+    "small": 35.9375em,
+    "smallest": 21.25em,
+);

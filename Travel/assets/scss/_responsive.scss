@@ -1,0 +1,33 @@
+@include responsive-min(medium) {
+    :root {
+        --count-number: 2.2rem;
+    }
+    body {
+        margin-top: 0;
+    }
+    .section {
+        padding: $rem-7 0 $rem-2;
+    }
+
+    .home__img,
+    .home__container {
+        height: 640px;
+    }
+}
+
+@include responsive-min(large) {
+    :root {
+        --biggest-fz: 4rem;
+        --h1-fz: 2.25rem;
+        --h2-fz: 1.75rem;
+        --h3-fz: 1.25rem;
+        --normal-fz: 1rem;
+        --small-fz: 0.875rem;
+        --smaller-fz: 0.813rem;
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

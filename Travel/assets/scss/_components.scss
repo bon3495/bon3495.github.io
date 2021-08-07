@@ -1,0 +1,58 @@
+.button {
+    color: var(--white-color);
+    background-color: var(--first-color);
+    padding: $rem-1 $rem-2;
+    font-weight: $fw-semi-bold;
+    transition: $transition;
+    display: inline-block;
+    border-radius: $rem-025;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: var(--first-color-alt);
+    }
+}
+
+.button--flex {
+    display: flex;
+    align-items: center;
+    column-gap: $rem-025;
+}
+
+.button.button--link {
+    background-color: 0;
+    padding: 0;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.scrollup {
+    position: fixed;
+    bottom: $rem-3;
+    right: $rem-15;
+    z-index: $z-tooltip;
+    font-size: $rem-125;
+    padding: $rem-05;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+    &.show-scrolltop {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// SCROLL BAR
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color-light);
+}

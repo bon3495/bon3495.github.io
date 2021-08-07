@@ -1,0 +1,39 @@
+@mixin responsive-min($screen) {
+    // map-has-key : Kiểm tra xem biến $screen có trong css ko
+    // nếu có thì trả về true, không có trả về false
+    // $map: Tên biến muốn lấy ra
+    // $key: Tên tham số muốn truyền vào
+    @if map-has-key($map: $breakpoints-min, $key: $screen) {
+        // Sử dụng map-get để lấy giá trị ra để sử dụng
+        // Tạo 1 biến tạm value để hứng giá trị truyền vào
+        $value: map-get(
+            $map: $breakpoints-min,
+            $key: $screen,
+        );
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` not found";
+    }
+}
+
+@mixin responsive-max($screen) {
+    @if map-has-key($map: $breakpoints-max, $key: $screen) {
+        $value: map-get(
+            $map: $breakpoints-max,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` not found";
+    }
+}
+
+@mixin text-content($fz, $color, $mb) {
+    font-size: $fz;
+    color: $color;
+    margin-bottom: $mb;
+}

@@ -1,0 +1,122 @@
+.home {
+    &__img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: 100%;
+    }
+
+    &__container {
+        position: relative;
+        height: height($header-height-mb);
+        align-content: center;
+        row-gap: 3rem;
+    }
+
+    &__data {
+        color: var(--white-color);
+        &-subtitle {
+            margin-bottom: $rem-075;
+            display: block;
+            font-weight: $fw-semi-bold;
+        }
+
+        &-title {
+            color: var(--white-color);
+            font-size: var(--biggest-fz);
+            font-weight: $fw-medium;
+            margin-bottom: $rem-25;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        row-gap: $rem-15;
+        &-link {
+            font-size: $rem-15;
+            color: var(--white-color);
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            transition: $transition;
+            &:hover {
+                color: var(--first-color);
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 228px;
+        right: 0;
+        bottom: $rem-1;
+        padding: $rem-15 $rem-1;
+        background: var(--first-color);
+        border-radius: $rem-025;
+        column-gap: $rem-05;
+        &-title {
+            display: block;
+            color: var(--white-color);
+            font-size: var(--small-fz);
+            font-weight: $fw-semi-bold;
+            margin-bottom: $rem-075;
+        }
+        &-link {
+            font-size: var(--small-fz);
+            color: var(--white-color);
+        }
+
+        &-btn {
+            font-size: var(--smaller-fz);
+        }
+
+        &-img {
+            width: 145px;
+        }
+
+        @include responsive-max(smallest) {
+            padding: $rem-1 $rem-05;
+            width: 200px;
+        }
+    }
+
+    @include responsive-min(medium) {
+        &__container {
+            height: 100vh;
+            grid-template-rows: 1.8fr 0.5fr;
+            align-items: flex-end;
+        }
+        &__social {
+            flex-direction: row;
+            column-gap: $rem-25;
+            margin-bottom: $rem-35;
+        }
+        &__info {
+            bottom: $rem-3;
+        }
+    }
+
+    @include responsive-min(large) {
+        &__container {
+            grid-template-rows: 2fr 0.5fr;
+            // row-gap: 0;
+        }
+        &__data {
+            &-title {
+                margin-bottom: $rem-1;
+            }
+        }
+        &__info {
+            width: 328px;
+            column-gap: $rem-2;
+            &-img {
+                width: 240px;
+            }
+        }
+    }
+}

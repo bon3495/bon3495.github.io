@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: $header-height-mb 0 0 0;
+    font-family: $body-font;
+    font-size: var(--normal-fz);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+body.dark-theme {
+    --first-color-second: hsl(var(--hue-color), 54%, 12%);
+    --title-color: hsl(var(--hue-color), 24%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 29%, 12%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-family: $title-font;
+    font-weight: $fw-semi-bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input {
+    border: 0;
+    font-family: $body-font;
+    font-size: var(--normal-fz);
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.main {
+    overflow-x: hidden;
+}
+
+// REUSABLE CSS CLASSES
+.section {
+    padding: $rem-45 0 $rem-25;
+}
+
+.section__title {
+    font-size: var(--h2-fz);
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: $rem-2;
+}
+
+.section__description {
+    margin-bottom: $rem-2;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: $rem-1;
+    margin-right: $rem-1;
+}
+
+.grid {
+    display: grid;
+    gap: $rem-15;
+}
+
+.overlay {
+    border-radius: $rem-025;
+    overflow: $hidden;
+    display: flex;
+    &-img {
+        transition: $transition;
+        border-radius: $rem-025;
+    }
+    &:hover {
+        .overlay-img {
+            transform: $scale;
+        }
+    }
+}
+
+.small-title {
+    font-size: var(--h3-fz);
+    margin-bottom: $rem-025;
+    color: var(--white-color);
+}
+
+.small-description {
+    font-size: var(--smaller-fz);
+    color: var(--white-color);
+}

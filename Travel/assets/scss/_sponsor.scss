@@ -1,0 +1,18 @@
+.sponsor {
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        justify-items: center;
+        grid-gap: $rem-35;
+    }
+
+    &__content {
+        width: 90px;
+        filter: invert(0.7);
+        transition: $transition;
+        cursor: pointer;
+        display: flex;
+        &:hover {
+            filter: invert(0.5);
+        }
+    }
+}

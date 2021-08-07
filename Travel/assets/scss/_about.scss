@@ -1,0 +1,43 @@
+.about {
+    &__container {
+        text-align: center;
+        row-gap: $rem-25;
+    }
+
+    &__img {
+        display: flex;
+        column-gap: $rem-1;
+        align-items: center;
+        justify-content: center;
+        &-one {
+            width: 130px;
+        }
+        &-two {
+            width: 180px;
+        }
+    }
+
+    @include responsive-min(medium) {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        &__data {
+            text-align: left;
+            .section__title {
+                text-align: left;
+            }
+        }
+    }
+
+    @include responsive-min(large) {
+        &__img {
+            &-one {
+                width: 230px;
+            }
+            &-two {
+                width: 290px;
+            }
+        }
+    }
+}

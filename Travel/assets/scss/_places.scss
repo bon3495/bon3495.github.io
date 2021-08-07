@@ -1,0 +1,80 @@
+.places {
+    &__container {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        @include responsive-max(smallest) {
+            grid-template-columns: max-content;
+        }
+    }
+
+    .place {
+        position: relative;
+        overflow: $hidden;
+        display: flex;
+        border-radius: $rem-025;
+        &:hover {
+            .place__img {
+                transform: $scale;
+            }
+        }
+        &__img {
+            height: 240px;
+            transition: $transition;
+            border-radius: $rem-025;
+        }
+
+        &__data {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: $rem-1;
+            color: var(--white-color);
+            width: 100%;
+            height: 100%;
+        }
+
+        &__rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: $rem-025;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            row-gap: $rem-125;
+        }
+
+        &__title {
+            font-weight: $fw-semi-bold;
+            color: var(--white-color);
+            font-size: var(--h3-fz);
+            margin-bottom: $rem-025;
+        }
+
+        &__button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: $rem-075 $rem-1;
+        }
+    }
+
+    @include responsive-min(small) {
+        &__container {
+            grid-template-columns: repeat(3, max-content);
+        }
+    }
+    @include responsive-min(medium) {
+        &__container {
+            grid-template-columns: repeat(4, max-content);
+        }
+    }
+    @include responsive-min(large) {
+        &__container {
+            grid-template-columns: repeat(5, max-content);
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: $z-fixed;
+    .nav {
+        height: $header-height-mb;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo,
+        &__toggle {
+            color: var(--white-color);
+        }
+
+        &__logo {
+            font-weight: $fw-semi-bold;
+            font-size: $rem-15;
+        }
+
+        &__toggle {
+            font-size: $rem-2;
+            cursor: pointer;
+        }
+
+        &__menu {
+            display: flex;
+            align-items: center;
+            margin-right: $rem-4;
+            .nav__list {
+                display: flex;
+                column-gap: $rem-4;
+            }
+            .change-theme__button {
+                position: absolute;
+                right: $rem-2;
+                align-items: center;
+                display: flex;
+                color: var(--white-color);
+                span {
+                    display: none;
+                }
+                .change-theme {
+                    cursor: pointer;
+                }
+            }
+            @include responsive-max(medium) {
+                position: fixed;
+                width: 70%;
+                height: 100%;
+                padding: $rem-3;
+                top: 0;
+                right: -100%;
+                background-color: var(--body-color);
+                box-shadow: -1px 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+                transition: $transition;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-right: 0;
+                .nav__list {
+                    flex-direction: column;
+                    gap: $rem-1;
+                }
+
+                .change-theme__button {
+                    margin-top: auto;
+                    column-gap: $rem-1;
+                    position: initial;
+                    color: var(--first-color);
+                    span {
+                        display: block;
+                        text-transform: uppercase;
+                    }
+                    .change-theme {
+                        font-size: $rem-125;
+                    }
+                }
+            }
+            &.show-menu {
+                right: 0;
+            }
+        }
+
+        &__link {
+            color: var(--text-color-light);
+            text-transform: uppercase;
+            font-weight: $fw-semi-bold;
+            position: relative;
+            display: inline-block;
+            padding: $rem-1 0;
+            &:hover {
+                color: var(--text-color);
+            }
+            &.active {
+                color: var(--text-color);
+                &:before {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    background-color: var(--text-color);
+                }
+            }
+        }
+
+        &__close {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.8rem;
+            font-size: $rem-2;
+            cursor: pointer;
+            color: var(--title-color);
+        }
+        @include responsive-min(medium) {
+            height: $header-height-tb;
+            &__close,
+            &__toggle {
+                display: none;
+            }
+            &__link {
+                color: var(--white-color);
+                text-transform: capitalize;
+                &:hover {
+                    color: var(--white-color);
+                }
+                &.active {
+                    color: var(--white-color);
+                    &:before {
+                        background-color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+
+    &.scroll-header {
+        background-color: var(--body-color);
+        // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+        & .nav__logo,
+        & .nav__toggle,
+        .change-theme__button {
+            color: var(--title-color);
+        }
+        @include responsive-min(medium) {
+            & .nav__link {
+                color: var(--title-color);
+                text-transform: capitalize;
+                &:hover {
+                    color: var(--title-color);
+                }
+                &.active {
+                    color: var(--title-color);
+                    &:before {
+                        background-color: var(--title-color);
+                    }
+                }
+            }
+        }
+    }
+}
