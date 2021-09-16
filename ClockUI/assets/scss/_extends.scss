@@ -1,0 +1,12 @@
+%clockwiseBf {
+    content: "";
+    position: absolute;
+    border-radius: 0.75rem;
+    z-index: $z-normal;
+}
+
+%fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

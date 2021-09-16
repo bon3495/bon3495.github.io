@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --hue-color: 240;
+  --hue-color-green: 154;
+  --hue-color-orange: 25;
+  --hue-color-pink: 335;
+  --first-color: hsl(var(--hue-color), 53%, 49%);
+  --title-color: hsl(var(--hue-color), 53%, 15%);
+  --text-color: hsl(var(--hue-color), 12%, 35%);
+  --text-color-light: hsl(var(--hue-color), 12%, 65%);
+  --body-color: hsl(var(--hue-color), 24%, 94%);
+  --white-color: #fff;
+  --biggest-fz: 3rem;
+  --small-fz: 0.813rem;
+  --smaller-fz: 0.75rem;
+  --tiny-fz: 0.625rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+body.dark-theme {
+  --title-color: hsl(var(--hue-color), 12%, 95%);
+  --text-color: hsl(var(--hue-color), 12%, 75%);
+  --body-color: hsl(var(--hue-color), 10%, 16%);
+}
+
+.dark-theme .clock__circle {
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1), -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+.dark-theme .clock__theme-color {
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+  background-color: hsl(var(--hue-color), 10%, 16%);
+}
+
+.dark-theme .clock__circle-light {
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-fz: 3.5rem;
+    --small-fz: 0.875rem;
+    --smaller-fz: 0.813rem;
+    --tiny-fz: 0.75rem;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.clock__circle-hour::before, .clock__circle-minutes::before, .clock__circle-seconds::before {
+  content: "";
+  position: absolute;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.clock__circle-light, .clock__text, .clock__date, .clock__theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock__container {
+  grid-template-rows: 1fr max-content;
+  height: 100vh;
+  position: relative;
+}
+
+.clock__content {
+  align-self: center;
+}
+
+.clock__circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: -6px 6px 16px var(--white-color), 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1), inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1), inset -6px 6px 16px var(--white-color);
+  border-radius: 50%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.clock__circle-times {
+  position: absolute;
+  width: 1rem;
+  height: 1px;
+  background: var(--text-color-light);
+}
+
+.clock__circle-90 {
+  transform: translateX(-50%) rotate(90deg);
+  left: 50%;
+}
+
+.clock__circle-0 {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.clock__circle-twelve {
+  top: 1.25rem;
+}
+
+.clock__circle-six {
+  bottom: 1.25rem;
+}
+
+.clock__circle-three {
+  right: 0.75rem;
+}
+
+.clock__circle-nine {
+  left: 0.75rem;
+}
+
+.clock__circle-rounder {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--first-color);
+  border-radius: 50%;
+  z-index: 10;
+  border: 2px solid var(--body-color);
+}
+
+.clock__circle-clockwise {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.clock__circle-hour {
+  width: 105px;
+  height: 105px;
+}
+
+.clock__circle-hour::before {
+  background: var(--text-color);
+  width: 0.25rem;
+  height: 3rem;
+}
+
+.clock__circle-minutes {
+  width: 136px;
+  height: 136px;
+}
+
+.clock__circle-minutes::before {
+  background: var(--text-color);
+  width: 0.25rem;
+  height: 4rem;
+}
+
+.clock__circle-seconds {
+  width: 130px;
+  height: 130px;
+}
+
+.clock__circle-seconds::before {
+  background: var(--first-color);
+  width: 0.125rem;
+  height: 5rem;
+}
+
+.clock__circle-light {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.clock__text {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.clock__text-hour {
+  font-size: var(--biggest-fz);
+}
+
+.clock__text-minutes {
+  font-size: var(--biggest-fz);
+}
+
+.clock__text-ampm {
+  align-self: flex-start;
+  font-size: var(--tiny-fz);
+  margin-left: 0.25rem;
+}
+
+.clock__date {
+  font-size: var(--small-fz);
+  font-weight: 500;
+}
+
+.clock__link {
+  display: block;
+  align-items: center;
+  padding: 1.5rem 0;
+  justify-self: center;
+  font-size: var(--smaller-fz);
+  color: var(--text-color);
+  transition: all 0.5s;
+}
+
+.clock__link:hover {
+  color: var(--first-color);
+}
+
+.clock__theme {
+  padding: 1.5rem 0;
+}
+
+.clock__theme-color {
+  padding: 0.5rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+  cursor: pointer;
+  color: var(--first-color);
+  margin: 0 0.5rem;
+  background-color: hsl(var(--hue-color), 24%, 94%);
+}
+
+.clock__theme-blue {
+  --hue-color: 240;
+}
+
+.clock__theme-pink {
+  --hue-color: 335;
+}
+
+.clock__theme-green {
+  --hue-color: 140;
+}
+
+.clock__theme-orange {
+  --hue-color: 25;
+}
+/*# sourceMappingURL=main.css.map */

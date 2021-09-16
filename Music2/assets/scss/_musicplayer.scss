@@ -1,0 +1,179 @@
+.music-player {
+    width: $w-max;
+    position: fixed;
+    height: $h-mini;
+    bottom: 0;
+    left: 0;
+    background: var(--alpha-color);
+    backdrop-filter: blur($rem-3);
+    transition: all $transition-1;
+    padding: 0 $rem-175;
+    .music-navigation {
+        display: flex;
+        align-items: center;
+        &-name {
+            flex: 1;
+            text-align: center;
+            margin-top: $rem-1;
+            font-weight: $fw-regular;
+            font-size: $rem-125;
+            text-transform: capitalize;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    .controls {
+        display: flex;
+        width: $w-max;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        position: relative;
+        margin: auto;
+        &-main {
+            display: flex;
+            .toggle-play {
+                margin: 0 $rem-125;
+                .icon-pause {
+                    display: none;
+                }
+                &.active {
+                    .icon-pause {
+                        display: block;
+                    }
+                    .icon-play {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-volume-range {
+            position: absolute;
+            transform: rotate(-90deg);
+            -webkit-appearance: none;
+            border-radius: $rem-125;
+            background-color: var(--alpha-color);
+            overflow: hidden;
+            cursor: pointer;
+            right: -40px;
+            bottom: 84px;
+            width: 100px;
+            height: 30px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all $transition-0;
+            z-index: $z-tooltip;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                background: var(--primary-color);
+                box-shadow: -200px 0 1px 200px var(--primary-color);
+                height: 40px;
+                width: 10px;
+            }
+        }
+        .btn-volume.active,
+        .btn-repeat.active {
+            color: var(--primary-color);
+            opacity: 1;
+        }
+        .btn-volume.active ~ .controls-volume-range {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .seek-bar {
+        &-range {
+            -webkit-appearance: none;
+            position: absolute;
+            top: -4px;
+            left: 0;
+            height: 10px;
+            width: $w-max;
+            background-color: var(--secondary-color);
+            overflow: hidden;
+            cursor: pointer;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 10px;
+                width: 5px;
+                background-color: var(--primary-color);
+                box-shadow: -400px 0 0 400px var(--primary-color);
+            }
+        }
+    }
+    .hide {
+        opacity: 0;
+        display: none;
+    }
+    &.active {
+        width: $w-max;
+        height: $h-max;
+        padding: $rem-175;
+        display: flex;
+        flex-direction: column;
+        .seek-bar {
+            &-range {
+                position: relative;
+                border-radius: $rem-2;
+                top: 0;
+            }
+        }
+        .music-navigation {
+            &-name {
+                margin: 0;
+                font-size: $rem-2;
+                flex: 1;
+                padding: 0 $rem-1;
+            }
+            .btn {
+                font-size: $rem-15;
+            }
+        }
+        .artist-name {
+            justify-content: center;
+            font-size: $rem-1;
+            margin-top: $rem-05;
+            text-transform: capitalize;
+        }
+        .cd-thumb {
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            box-shadow: var(--shadow);
+            margin: auto;
+        }
+        .seek-bar {
+            display: flex;
+            flex-direction: column;
+            &-time {
+                display: flex;
+                justify-content: space-between;
+                font-size: $rem-1;
+                margin: $rem-05 0;
+                font-weight: $fw-medium;
+            }
+        }
+        .controls {
+            height: 100px;
+            .btn {
+                font-size: $rem-15;
+            }
+            &-main {
+                .btn {
+                    font-size: $rem-25;
+                }
+                .toggle-play {
+                    width: 90px;
+                    height: 90px;
+                    margin: 0 $rem-1;
+                }
+            }
+        }
+        .hide {
+            opacity: 1;
+            display: flex;
+        }
+    }
+}

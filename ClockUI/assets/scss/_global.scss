@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $bd-font;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: $m-1;
+    margin-right: $m-1;
+}
+
+.grid {
+    display: grid;
+}
+
+body.dark-theme {
+    --title-color: hsl(var(--hue-color), 12%, 95%);
+    --text-color: hsl(var(--hue-color), 12%, 75%);
+    --body-color: hsl(var(--hue-color), 10%, 16%);
+}
+
+.dark-theme .clock__circle {
+    box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1), -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+        inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1);
+}
+.dark-theme .clock__theme-color {
+    box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
+        inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+    background-color: hsl(var(--hue-color), 10%, 16%);
+}
+.dark-theme .clock__circle-light {
+    box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
+        inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-fz: 3.5rem; // 56px
+        --small-fz: 0.875rem; // 14px
+        --smaller-fz: 0.813rem; // 13px
+        --tiny-fz: 0.75rem; // 12px
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

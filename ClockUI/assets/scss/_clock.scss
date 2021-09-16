@@ -1,0 +1,171 @@
+.clock {
+    &__container {
+        grid-template-rows: 1fr max-content;
+        height: 100vh;
+        position: relative;
+    }
+
+    &__content {
+        align-self: center;
+    }
+
+    &__circle {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        box-shadow: -6px 6px 16px var(--white-color), 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+            inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1), inset -6px 6px 16px var(--white-color);
+        border-radius: 50%;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $m-35;
+        &-times {
+            position: absolute;
+            width: 1rem;
+            height: 1px;
+            background: var(--text-color-light);
+        }
+        &-90 {
+            transform: translateX(-50%) rotate(90deg);
+            left: 50%;
+        }
+        &-0 {
+            transform: translateY(-50%);
+            top: 50%;
+        }
+        &-twelve {
+            top: 1.25rem;
+        }
+        &-six {
+            bottom: 1.25rem;
+        }
+        &-three {
+            right: 0.75rem;
+        }
+        &-nine {
+            left: 0.75rem;
+        }
+        &-rounder {
+            width: 0.75rem;
+            height: 0.75rem;
+            background: var(--first-color);
+            border-radius: 50%;
+            z-index: $z-tooltip;
+            border: 2px solid var(--body-color);
+        }
+        &-clockwise {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+        &-hour {
+            width: 105px;
+            height: 105px;
+            &::before {
+                @extend %clockwiseBf;
+                background: var(--text-color);
+                width: 0.25rem;
+                height: 3rem;
+            }
+        }
+        &-minutes {
+            width: 136px;
+            height: 136px;
+            &::before {
+                @extend %clockwiseBf;
+                background: var(--text-color);
+                width: 0.25rem;
+                height: 4rem;
+            }
+        }
+        &-seconds {
+            width: 130px;
+            height: 130px;
+            &::before {
+                @extend %clockwiseBf;
+                background: var(--first-color);
+                width: 0.125rem;
+                height: 5rem;
+            }
+        }
+        &-light {
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            border-radius: 50%;
+            @extend %fcenter;
+            padding: $p-05;
+            box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
+                inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+            cursor: pointer;
+            color: var(--first-color);
+        }
+    }
+
+    &__text {
+        @extend %fcenter;
+        color: var(--title-color);
+        font-weight: $fw-med;
+        &-hour {
+            font-size: var(--biggest-fz);
+        }
+        &-minutes {
+            font-size: var(--biggest-fz);
+        }
+        &-ampm {
+            align-self: flex-start;
+            font-size: var(--tiny-fz);
+            margin-left: $m-025;
+        }
+    }
+
+    &__date {
+        @extend %fcenter;
+        font-size: var(--small-fz);
+        font-weight: $fw-med;
+    }
+
+    &__link {
+        display: block;
+        align-items: center;
+        padding: $p-15 0;
+        justify-self: center;
+        font-size: var(--smaller-fz);
+        color: var(--text-color);
+        transition: all 0.5s;
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+
+    &__theme {
+        @extend %fcenter;
+        padding: $p-15 0;
+        &-color {
+            padding: $p-05;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
+                inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+            cursor: pointer;
+            color: var(--first-color);
+            margin: 0 $m-05;
+            background-color: hsl(var(--hue-color), 24%, 94%);
+        }
+        &-blue {
+            --hue-color: 240;
+        }
+        &-pink {
+            --hue-color: 335;
+        }
+        &-green {
+            --hue-color: 140;
+        }
+        &-orange {
+            --hue-color: 25;
+        }
+    }
+}

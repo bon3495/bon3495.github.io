@@ -1,0 +1,63 @@
+.home {
+    width: $w-max;
+    padding: $rem-125;
+    height: $h-max;
+    padding-bottom: $h-mini;
+    overflow-y: auto;
+    &-carousel {
+        width: $w-max;
+        height: $h-medium;
+        overflow: hidden;
+        border-radius: $rem-125;
+        position: relative;
+        &-img {
+            position: absolute;
+            width: $w-max;
+            height: $h-max;
+            object-fit: cover;
+            transition: all $transition-1;
+            opacity: 0;
+            box-shadow: var(--shadow);
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+    &-heading {
+        font-size: $rem-175;
+        margin: $rem-2 0 $rem-075;
+        font-weight: $fw-regular;
+        text-transform: capitalize;
+    }
+    &-playlists {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow-x: auto;
+        width: $w-max;
+        height: auto;
+        min-height: $h-medium;
+        position: relative;
+        .playlist-card {
+            max-width: 150px;
+            height: $h-max;
+            flex: 0 0 auto;
+            margin: 0 10px;
+            &-img {
+                max-width: $w-max;
+                height: 150px;
+                border-radius: $rem-125;
+                object-fit: cover;
+            }
+            &-name {
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: $rem-125;
+                padding: $rem-025;
+                width: $w-max;
+            }
+        }
+    }
+}

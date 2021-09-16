@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $rem-125;
+    cursor: pointer;
+}
+
+.btn.toggle-play {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+}
+
+.btn.btn-repeat,
+.btn.btn-volume,
+.btn.btn-random {
+    opacity: 0.5;
+}
+
+.btn-random.active,
+.btn-volume.active,
+.btn-repeat.active {
+    color: var(--primary-color);
+    opacity: 1;
+}

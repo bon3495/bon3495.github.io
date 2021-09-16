@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+body {
+    width: $w-max;
+    height: 100vh;
+    max-width: 375px;
+    position: relative;
+    background-color: var(--bg-color);
+    font-family: $body-font;
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

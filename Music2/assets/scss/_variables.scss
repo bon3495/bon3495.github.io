@@ -1,0 +1,43 @@
+$h-mini: 110px;
+$h-medium: 200px;
+$h-max: 100%;
+$w-max: 100%;
+
+:root {
+    --bg-color: #141414;
+    --text-color: #fff;
+    --primary-color: #ff6370;
+    --secondary-color: #000000;
+    --alpha-color: rgba(0, 0, 0, 0.5);
+    --shadow: 0 15px 40px var(--alpha-color);
+}
+
+// Z-INDEX
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// TRANSITION
+$transition-0: 0.5s;
+$transition-1: 1s;
+
+//REM
+$rem-025: 0.25rem;
+$rem-05: 0.5rem;
+$rem-075: 0.75rem;
+$rem-1: 1rem;
+$rem-125: 1.25rem;
+$rem-15: 1.5rem;
+$rem-175: 1.75rem;
+$rem-2: 2rem;
+$rem-225: 2.25rem;
+$rem-25: 2.5rem;
+$rem-275: 2.75rem;
+$rem-3: 3rem;
+
+// FONT WEIGHT
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+
+// FONT
+$body-font: "Roboto", sans-serif;

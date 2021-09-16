@@ -1,0 +1,83 @@
+.playlist {
+    width: $w-max;
+    height: $h-max;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: var(--bg-color);
+    padding: $rem-175 0;
+    overflow: auto;
+    transition: all $transition-1;
+    transform: translateX(100%);
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $rem-175;
+        padding: 0 $rem-175;
+        &-title {
+            font-size: $rem-2;
+            flex: 1;
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: $fw-regular;
+        }
+        .btn {
+            width: 38px;
+            height: 38px;
+            font-size: $rem-15;
+        }
+    }
+    &-song {
+        display: flex;
+        align-items: center;
+        border-top: 2px solid var(--alpha-color);
+        height: 80px;
+        cursor: pointer;
+        padding: 0 $rem-175;
+        &.active {
+            background-color: rgba(255, 99, 112, 0.9);
+        }
+        &-cover {
+            width: 60px;
+            height: 60px;
+            border-radius: $rem-075;
+            position: relative;
+            overflow: hidden;
+            margin-right: $rem-125;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: $rem-15;
+                color: var(--text-color);
+                opacity: 0;
+                visibility: hidden;
+                transition: all $transition-0;
+            }
+        }
+        &-img {
+            max-width: $w-max;
+            height: $h-max;
+            object-fit: cover;
+        }
+        &-name {
+            flex: 1;
+            font-size: $rem-125;
+            text-transform: capitalize;
+        }
+        &.active {
+            & .playlist-song-cover {
+                i.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    &.active {
+        transform: translateX(0);
+    }
+}

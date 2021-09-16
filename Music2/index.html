@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Hom Section -->
+    <section class="home">
+        <!-- Carousel -->
+        <div class="home-carousel">
+            <img src="./assets/img/bb0.jpeg" class="home-carousel-img active" alt="">
+            <img src="./assets/img/tiktok.jpeg" class="home-carousel-img" alt="">
+            <img src="./assets/img/cover10.png" class="home-carousel-img" alt="">
+            <img src="./assets/img/billboard.jpeg" class="home-carousel-img" alt="">
+            <img src="./assets/img/cover11.png" class="home-carousel-img" alt="">
+        </div>
+
+        <!-- Playlist -->
+        <h1 class="home-heading">Recently Played</h1>
+        <div class="home-playlists recently-played">
+            <!-- <div class="playlist-card">
+                <img src="./assets/img/cover9.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top International</p>
+            </div>-->
+        </div>
+
+        <h1 class="home-heading">based on your listening</h1>
+        <div class="home-playlists listening">
+            <!-- <div class="playlist-card">
+                <img src="./assets/img/cover9.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top International</p>
+            </div> -->
+        </div>
+
+        <h1 class="home-heading">Favorite Playlists</h1>
+        <div class="home-playlists favourite">
+            <!-- <div class="playlist-card">
+                <img src="./assets/img/cover9.png" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Top International</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="music-player">
+        <div class="music-navigation">
+            <div class="btn btn-down hide">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <h1 class="music-navigation-name">Song 1</h1>
+            <div class="btn btn-bars hide">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <p class="artist-name hide">Artist 1</p>
+        <img src="./assets/img/cover1.png" alt="" class="cd-thumb hide">
+        <div class="seek-bar">
+            <input class="seek-bar-range" type="range" id="seekBar" value="0" min="0" max="100" step="1">
+            <div class="seek-bar-time hide">
+                <p class="current-time">00 : 00</p>
+                <p class="duration">00 : 00</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="btn btn-repeat">
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="controls-main">
+                <div class="btn btn-prev">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="btn toggle-play">
+                    <i class="fas fa-play icon-play"></i>
+                    <i class="fas fa-pause icon-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+            <div class="btn btn-random">
+                <i class="fas fa-random"></i>
+            </div>
+            <!-- <div class="btn btn-volume">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <input type="range" class="controls-volume-range" min="0" max="1" step="0.1" value="1" /> -->
+        </div>
+    </section>
+
+    <section class="playlist">
+        <div class="playlist-header">
+            <div class="btn btn-back">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <h1 class="playlist-header-title">playlist</h1>
+            <div class="btn btn-light">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+        <div class="playlist-songs">
+            <!-- <div class="playlist-song">
+                <div class="playlist-song-cover">
+                    <img src="./assets/img/cover1.png" alt="" class="playlist-song-img">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="playlist-song-name">Song 1</p>
+            </div> -->
+        </div>
+    </section>
+    <audio src="" id="audio"></audio>
+    <script src="./assets/js/script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

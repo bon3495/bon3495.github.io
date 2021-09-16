@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="player">
+
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+
+            <!-- HEADER -->
+            <header>
+                <h4 class="sub-title">
+                    Now playing
+                </h4>
+                <h2 class="title">
+                    String 57th & 9th
+                </h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd" id="cd">
+                <div class="cd-thumb" style="background-image: url('./assets/img/aloha.jpeg')"></div>
+            </div>
+
+            <!-- CONTROL -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class='bx bx-revision'></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class='bx bx-skip-previous'></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class='bx bx-play icon-play'></i>
+                    <i class='bx bx-pause icon-pause'></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class='bx bx-skip-next'></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class='bx bx-shuffle'></i>
+                </div>
+            </div>
+
+            <!-- RANGE -->
+            <input type="range" class="progress" id="progress" value="0" step="1" min="0" max="100">
+
+            <!-- AUDIO -->
+            <audio src="" id="audio"></audio>
+
+        </div>
+
+        <div class="playlist" id="playlist">
+            <!-- <div class="song">
+                <div class="thumb" style="background-image: url('./assets/img/aloha.jpeg')"></div>
+                <div class="body">
+                    <h3 class="body-title">Music name</h3>
+                    <p class="body-author">Singer</p>
+                </div>
+                <div class="option">
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                </div>
+            </div>
+            <div class="song">
+                <div class="thumb"></div>
+                <div class="body">
+                    <h3 class="body-title">Music name</h3>
+                    <p class="body-author">Singer</p>
+                </div>
+                <div class="option">
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                </div>
+            </div>
+            <div class="song">
+                <div class="thumb"></div>
+                <div class="body">
+                    <h3 class="body-title">Music name</h3>
+                    <p class="body-author">Singer</p>
+                </div>
+                <div class="option">
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
